@@ -1,6 +1,6 @@
 # Project: Prompt Engineering Fundamentals with LLMs
 
-This project provides a hands-on demonstration of prompt engineering techniques to improve the quality, structure, and relevance of responses from Large Language Models (LLMs).
+This project provides a hands-on demonstration of prompt engineering techniques used to improve the quality, structure, and relevance of responses from Large Language Models (LLMs).
 
 The main notebook (`01_prompt_engineering_basics.ipynb`) uses the **Google Gemini API** to showcase how a well-structured prompt yields superior results compared to a vague one. This serves as a foundational example for anyone looking to get more predictable and useful results from generative AI.
 
@@ -19,9 +19,8 @@ Follow these steps to set up and run the project locally.
 
 1.  **Clone the repository:**
     ```sh
-    git clone [https://github.com/YOUR_USERNAME/project_openai_prompt_engineering.git](https://github.com/YOUR_USERNAME/project_openai_prompt_engineering.git)
+    git clone [https://github.com/devtraldi/project_openai_prompt_engineering.git](https://github.com/devtraldi/project_openai_prompt_engineering.git)
     ```
-    *(Note: Replace `YOUR_USERNAME` with your actual GitHub username).*
 
 2.  **Navigate to the project directory:**
     ```sh
