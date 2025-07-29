@@ -9,7 +9,7 @@ The main notebook, `04_prompt_engineering_pro.ipynb`, provides a control panel w
 * Generation Parameters like `temperature`, `top_p`, `top_k`, and `max_output_tokens`
 * The `System Prompt` and `User Prompt`
 
-It features real-time **streaming** of the AI's response and advanced output formatting, which renders Markdown, highlights code blocks, and adds a **"Copy Code" button** to each block for an enhanced user experience.
+It features advanced output formatting, which renders Markdown, highlights code blocks, and adds a **"Copy Code" button** to each block for an enhanced user experience.
 
 ---
 
@@ -26,7 +26,7 @@ Follow these steps to set up and run the project locally.
 
 1.  **Clone the repository:**
     ```sh
-    git clone https://github.com/devtraldi/project_prompt_engineering.git
+    git clone [https://github.com/devtraldi/project_prompt_engineering.git](https://github.com/devtraldi/project_prompt_engineering.git)
     ```
 
 2.  **Navigate to the project directory:**
@@ -48,7 +48,7 @@ Follow these steps to set up and run the project locally.
     pip install -r requirements.txt
     ```
 
-5.  **Set up your API Keys in `.env`:**
+5.  **Set up your API Key in `.env`:**
     * Make a copy of the `.env.example` file and name it `.env`.
     * Open `.env` and add your **Google API Key**. You can get a free key at [aistudio.google.com](https://aistudio.google.com).
 
