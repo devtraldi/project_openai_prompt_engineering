@@ -1,12 +1,19 @@
-# Project: Prompt Engineering Fundamentals with LLMs
+# Project: Interactive Prompt Engineering Playground
 
-This project provides a hands-on demonstration of prompt engineering techniques used to improve the quality, structure, and relevance of responses from Large Language Models (LLMs).
+## 🚀 About The Project
 
-The main notebook (`01_prompt_engineering_basics.ipynb`) uses the **Google Gemini API** to showcase how a well-structured prompt yields superior results compared to a vague one. This serves as a foundational example for anyone looking to get more predictable and useful results from generative AI.
+This project is an interactive **Prompt Engineering Playground** built within a Jupyter Notebook using `ipywidgets`. It serves as a powerful tool for experimenting with and comparing responses from different Large Language Models (LLMs).
+
+The main notebook, `02_prompt_engineering_pro.ipynb`, provides a control panel with interactive widgets to dynamically change:
+* The AI Model (supporting Google Gemini models like `gemini-1.5-pro` and `gemini-1.5-flash`)
+* Generation Parameters like `temperature` and `max_output_tokens`
+* The `System Prompt` and `User Prompt`
+
+It features real-time **streaming** of the AI's response to provide a better user experience.
 
 ---
 
-## 🚀 Getting Started
+## ⚙️ Getting Started
 
 Follow these steps to set up and run the project locally.
 
@@ -19,12 +26,12 @@ Follow these steps to set up and run the project locally.
 
 1.  **Clone the repository:**
     ```sh
-    git clone [https://github.com/devtraldi/project_openai_prompt_engineering.git](https://github.com/devtraldi/project_openai_prompt_engineering.git)
+    git clone [https://github.com/devtraldi/project_prompt_engineering.git](https://github.com/devtraldi/project_prompt_engineering.git)
     ```
 
 2.  **Navigate to the project directory:**
     ```sh
-    cd project_openai_prompt_engineering
+    cd project_prompt_engineering
     ```
 
 3.  **Create and activate a virtual environment:**
@@ -34,29 +41,24 @@ Follow these steps to set up and run the project locally.
 
     # Activate on Windows
     venv\Scripts\activate
-    
-    # Activate on macOS/Linux
-    # source venv/bin/activate
     ```
 
 4.  **Install the required libraries:**
-    The `requirements.txt` file includes all necessary libraries for both Google Gemini and OpenAI.
     ```sh
     pip install -r requirements.txt
     ```
 
-5.  **Set up your API Keys:**
-    This project requires a Google API Key to run.
+5.  **Set up your API Keys in `.env`:**
     * Make a copy of the `.env.example` file and name it `.env`.
-    * Open the `.env` file and add your personal **Google API Key**. You can get one for free at [aistudio.google.com](https://aistudio.google.com).
-    * The file is git-ignored for your security.
+    * Open `.env` and add your **Google API Key** to run the playground. You can get a free key at [aistudio.google.com](https://aistudio.google.com).
+    * The script is robust and will only run the APIs for which a key is provided.
 
     Your `.env` file should look like this:
     ```
-    # Required for the project to run
+    # Required for the main features
     GOOGLE_API_KEY="AIzaSy..." 
 
-    # Optional, for secondary experimentation
+    # Optional, if you wish to extend the project
     OPENAI_API_KEY="sk-..."
     ```
 
@@ -69,4 +71,6 @@ Follow these steps to set up and run the project locally.
     ```sh
     jupyter lab
     ```
-3.  In the JupyterLab interface, navigate to the `notebooks` folder and open the `01_prompt_engineering_basics.ipynb` notebook to view and run the code. The notebook is pre-configured to use the Google Gemini API.
+3.  In the JupyterLab interface, navigate to the `notebooks` folder and open **`02_prompt_engineering_pro.ipynb`**.
+4.  Run all the cells. The interactive control panel will appear.
+5.  Modify the parameters using the widgets and click "Generate Response" to experiment.
